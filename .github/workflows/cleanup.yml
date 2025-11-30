@@ -11,5 +11,5 @@ jobs:
     steps:
       - uses: Mattraks/delete-workflow-runs@v2
         with:
-          days: 3                # 删除超过 3 天的运行记录
-          keep_minimum_runs: 6   # 每个 workflow 至少保留 6 条记录
+          retain_days: 3          # 删除超过 3 天的运行记录
+          keep_minimum_runs: 6    # 每个 workflow 最少保留 6 条
