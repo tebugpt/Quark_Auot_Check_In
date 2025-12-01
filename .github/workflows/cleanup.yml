@@ -2,7 +2,7 @@ name: Cleanup Workflow Runs
 
 on:
   schedule:
-    - cron: "0 3 * * *"   # 每天凌晨 3 点执行
+    - cron: "0 3 */15 * *"   #每 15 天执行, 凌晨 3 点执行
   workflow_dispatch:      # 可手动执行
 
 jobs:
